@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --max-w: 500px;
+
+  --grey-1: #707070;
+}
+
+.card-category-1 {
+  font-family: sans-serif;
+  text-align: center;
+}
+.card-category-1 div {
+  display: inline-block;
+}
+
+/* Basic Card */
+.basic-card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.profileImage {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: url(images/User.png);
+  position: absolute;
+  left: 6%;
+  right: 54%;
+  top: 5.25%;
+  bottom: 64.75%;
+}
+.logo {
+  fill: none;
+  position: absolute;
+  left: 57.67%;
+  right: 11.1%;
+  top: 5.25%;
+  bottom: 82.75%;
+}
+.nametag {
+  position: absolute;
+  left: 6%;
+  right: 61%;
+  top: 37%;
+  bottom: 50.75%;
+}
+.nametag a {
+  text-decoration: none;
+}
+.nametag span {
+  font-family: Avenir;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.basic-card .card-title {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.basic-card .card-text {
+  bottom: 31.25%;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.basic-card .card-link {
+  width: -webkit-fill-available;
+}
+
+.basic-card .card-link .link {
+  text-decoration: none;
+  position: relative;
+}
+
+.basic-card .card-link .link:after {
+  top: 30px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  width: 0;
+
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.basic-card .card-link .link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.basic-card-grey {
+  background: var(--grey-1);
+}
+
+.basic-card-grey .card-content,
+.basic-card .card-link link {
+  color: #fff;
+}
+
+.basic-card-grey .card-link .link:after {
+  background: #fff;
+}
+
+.card-content {
+  position: absolute;
+  left: 16%;
+  right: 13%;
+  top: 52.5%;
+  bottom: 37.5%;
+}
+
+.card-link .icon {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background: #383838;
+}
+.icon1 {
+  position: absolute;
+  left: 38.67%;
+  right: 54.52%;
+  top: 83.5%;
+  /* bottom: 10.5%; */
+}
+.icon2 {
+  position: absolute;
+  left: 53.33%;
+  right: 36%;
+  top: 83.5%;
+  /* bottom: 10.5%; */
+}
+.padtop {
+  padding-top: 4px;
+}
+.icon3 {
+  position: absolute;
+  left: 84.33%;
+  right: 7.67%;
+  top: 84%;
+  /* bottom: 10%; */
+}
+.iconname {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+.verify {
+  position: absolute;
+  left: 38%;
+  right: 53.67%;
+  top: 91%;
+  /* bottom: 6.5%; */
+  padding-top: 2px;
+  padding-left: 6px;
+}
+.plant {
+  position: absolute;
+  left: 55%;
+  right: 37.33%;
+  top: 91%;
+  /* bottom: 6.5%; */
+  padding-top: 2px;
+}
+.star {
+  position: absolute;
+  left: 5.33%;
+  right: 75.81%;
+  top: 91.25%;
+  /* bottom: 6.25%; */
+}
+.strengthcontent {
+  position: absolute;
+  left: 7%;
+  right: 77.67%;
+  top: 95.75%;
+  /* bottom: 4.75%; */
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 7px;
+  line-height: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+.card-link .link:after {
+  background: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+  .card-title .card-content {
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .basic-card .card-title {
+    font-size: 20px;
+    line-height: 25px;
+    justify-content: center;
+  }
+
+  .basic-card .card-text {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .card-link {
+    top: 70px;
+  }
+}
